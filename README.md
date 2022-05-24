@@ -458,6 +458,7 @@ Respuesta con error:
         }
     </code>
 </pre>
+<hr />
 
 2. :x: En caso de no existir el nombre de casilla dado un dominio el status sera 400
    BadRequest:
@@ -476,5 +477,6 @@ Respuesta con error:
         }
     </code>
 </pre>
+<hr />
 
 3. :x: En caso de ocurrir un error inesperado el status será 500 Internal Server Error.
