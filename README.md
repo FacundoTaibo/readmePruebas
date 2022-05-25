@@ -4,7 +4,7 @@ Este proyecto API REST fue creado con SpringBoot en Java 8.
 
 ## &nbsp; &nbsp; Documentación del API REST.
 
-URL testing [http://192.168.4.113:9090/ConsultaCFEApi/comprobante](http://192.168.4.113:9090/ConsultaCFEApi/comprobante)
+URL testing [http://192.168.4.113:9090/ConsultaCFEApi](http://192.168.4.113:9090/ConsultaCFEApi)
 
 ### &nbsp; &nbsp; &nbsp; &nbsp; :point_right: Obtener tipos de comprobantes.
 
@@ -12,7 +12,8 @@ URL testing [http://192.168.4.113:9090/ConsultaCFEApi/comprobante](http://192.16
 
 Verbo: **`GET`**
 <br>
-Url: **/tiposComprobantes**
+
+Url: **/comprobante/tipos**
 
 #### &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Response :leftwards_arrow_with_hook:
 
@@ -409,7 +410,7 @@ Respuesta con error:
 Verbo: **`GET`**
 <br>
 
-Url: **/empresa/obtenerCasilla/porDominio?dominio=http://cliente.mega6.com.uy/**
+Url: **/empresa/obtenerCasilla/porDominio?dominio=_http://cliente.mega6.com.uy/_**
 
 Son válidos los siguientes valores a enviar en el parámetro dominio :
 
