@@ -13,7 +13,7 @@ URL testing [http://192.168.4.113:9090/ConsultaCFEApi](http://192.168.4.113:9090
 Verbo: **`GET`**
 <br>
 
-Url: **/comprobante/tipos**
+Url: **/comprobante/tipo**
 
 #### &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Response :leftwards_arrow_with_hook:
 
@@ -356,52 +356,54 @@ Respuesta con error:
 
 3. :x: En caso de ocurrir un error inesperado el status será **500 Internal Server Error.**
 4. :x: En caso de omitir la autorización o ser incorrecta el estado será **401 Unauthorized** con la siguiente respuesta:
-   <pre>
-       <code>
-         {
-              "exito": false,
-              "error": {
-                 "titulo": "Acceso denegado",
-                 "mensaje": "Acceso denegado - Header incompleto para procesar la autenticación",
-                 "mensajeException": "Acceso denegado - Header incompleto para procesar la autenticación",
-                 "severidad": "error"
-             },
-             "datos": null
-         }
-       </code>
-   </pre>
+      <pre>
+          <code>
+            {
+                 "exito": false,
+                 "error": {
+                    "titulo": "Acceso denegado",
+                    "mensaje": "Acceso denegado - Header incompleto para procesar la autenticación",
+                    "mensajeException": "Acceso denegado - Header incompleto para procesar la autenticación",
+                    "severidad": "error"
+                },
+                "datos": null
+            }
+          </code>
+      </pre>
+      <hr />
+      O
+      <pre>
+          <code>
+             {
+                 "exito": false,
+                 "error": {
+                     "titulo": "Acceso denegado",
+                     "mensaje": "Fecha con formato no válido. Formato válido: yyyy-MM-ddTHH:mm",
+                     "mensajeException": "Fecha con formato no válido. Formato válido: yyyy-MM-ddTHH:mm",
+                     "severidad": "error"
+                 },
+                 "datos": null
+             }
+          </code>
+      </pre>
+      <hr />
+      O
+      <pre>
+          <code>
+              {
+                  "exito": false,
+                  "error": {
+                      "titulo": "Acceso denegado",
+                      "mensaje": "Acceso denegado",
+                      "mensajeException": "Acceso denegado",
+                      "severidad": "error"
+                  },
+                  "datos": null
+              }
+          </code>
+      </pre>
    <hr />
-   O
-   <pre>
-       <code>
-          {
-              "exito": false,
-              "error": {
-                  "titulo": "Acceso denegado",
-                  "mensaje": "Fecha con formato no válido. Formato válido: yyyy-MM-ddTHH:mm",
-                  "mensajeException": "Fecha con formato no válido. Formato válido: yyyy-MM-ddTHH:mm",
-                  "severidad": "error"
-              },
-              "datos": null
-          }
-       </code>
-   </pre>
    <hr />
-   O
-   <pre>
-       <code>
-           {
-               "exito": false,
-               "error": {
-                   "titulo": "Acceso denegado",
-                   "mensaje": "Acceso denegado",
-                   "mensajeException": "Acceso denegado",
-                   "severidad": "error"
-               },
-               "datos": null
-           }
-       </code>
-   </pre>
 
 ### &nbsp; &nbsp; &nbsp; &nbsp; :point_right: Obtener nombre de casilla dado dominio despachante.
 
