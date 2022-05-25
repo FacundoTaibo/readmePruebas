@@ -411,6 +411,8 @@ Verbo: **`GET`**
 
 Url: **/empresa/obtenerCasilla/porDominio?dominio=http://cliente.mega6.com.uy/**
 
+Son válidos los siguientes valores a enviar en el parámetro dominio :
+
 <ol>
     <li>http://cliente.mega6.com.uy/</li>
     <li>http://cliente.mega6.com.uy</li>
